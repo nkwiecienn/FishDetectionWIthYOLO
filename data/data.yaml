@@ -1,0 +1,7 @@
+names:
+- fish
+nc: 1
+path: C:\Users\natal\ZAW\lab14\data
+test: ''
+train: C:\Users\natal\ZAW\lab14\data\train\images
+val: C:\Users\natal\ZAW\lab14\data\valid\images
