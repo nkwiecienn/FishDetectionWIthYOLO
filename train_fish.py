@@ -19,7 +19,7 @@ def train_yolo():
     with open(data_yaml, 'w') as f:
         yaml.dump(data, f)
 
-    model = YOLO('yolov8n.pt')
+    model = YOLO('yolov8m.pt')
 
     args = {
         'data': str(data_yaml),
@@ -29,7 +29,7 @@ def train_yolo():
         'device': 'cuda',
         'workers': 4,
         'name': 'fish_detector',
-        'patience': 50,
+        'patience': 5,
         'save_period': 10,
         'exist_ok': True,
         'pretrained': True,
